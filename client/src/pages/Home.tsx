@@ -1,15 +1,15 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Categories from '@/components/Categories';
 import Collection from '@/components/Collection';
-import About from '@/components/About';
+import Testimonials from '@/components/Testimonials';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
 
 /**
- * Home Page - Zoia Fine Bijoux
- * Design: Minimalist luxury jewelry store
- * Layout: Full-page sections with elegant transitions
- * Colors: Cream background, rose coral accents, gold details
+ * Home Page - Zoia Fine Bijoux (Clicksophia Style)
+ * Design: Premium jewelry store with modern layout
+ * Colors: Rose coral and gold with cream background
  */
 
 export default function Home() {
@@ -18,8 +18,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Categories />
         <Collection />
-        <About />
+        <Testimonials />
         <Newsletter />
       </main>
       <Footer />

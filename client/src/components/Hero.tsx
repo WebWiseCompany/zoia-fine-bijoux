@@ -1,57 +1,39 @@
-import { ArrowRight } from 'lucide-react';
-
 /**
- * Hero Component - Zoia Fine Bijoux
- * Design: Elegant hero with background image and minimal text overlay
- * Image: Premium jewelry photography with warm lighting
+ * Hero Component - Zoia Fine Bijoux (Clicksophia Style)
+ * Design: Large hero image with centered text overlay
  */
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-96 md:h-[500px] overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: 'url(/images/hero-banner.jpg)',
         }}
       >
-        {/* Overlay - subtle gradient for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/10"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container text-center max-w-2xl px-4">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
         <div className="space-y-6 animate-in fade-in duration-1000">
-          {/* Tagline */}
-          <p className="text-accent text-sm tracking-widest font-medium uppercase animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Elegância e Sofisticação
-          </p>
-
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white drop-shadow-lg animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-            Zoia Fine Bijoux
+          {/* Main Text */}
+          <h1 className="text-4xl md:text-6xl font-serif font-bold text-white drop-shadow-lg">
+            Boas Festas!
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-white/90 font-light max-w-xl mx-auto drop-shadow animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            Bijuterias finas e delicadas, cuidadosamente selecionadas para celebrar sua beleza única
+          <p className="text-lg md:text-xl text-white/90 font-light drop-shadow max-w-2xl mx-auto">
+            A magia da virada: vista seu desejo para 2026
           </p>
 
           {/* CTA Button */}
-          <div className="pt-4">
-            <button className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:shadow-lg group btn-primary">
-              Explorar Coleção
-              <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce duration-1000">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-white/50 rounded-full animate-pulse"></div>
+          <button className="inline-block bg-primary hover:shadow-lg text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 uppercase tracking-wide">
+            ✓ Confira a Coleção
+          </button>
         </div>
       </div>
     </section>
