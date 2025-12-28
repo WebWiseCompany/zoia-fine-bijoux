@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1766966102141,
+      "tag": "0000_blue_skin",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1766966172567,
+      "tag": "0001_powerful_master_mold",
+      "breakpoints": true
+    }
+  ]
+}
