@@ -27,12 +27,12 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/90 font-light drop-shadow max-w-2xl mx-auto">
-            A magia da virada: vista seu desejo para 2026
+            A magia do novo ano: vista seu desejo para 2026
           </p>
 
           {/* CTA Button */}
           <button className="inline-block bg-primary hover:shadow-lg text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 uppercase tracking-wide">
-            ✓ Confira a Coleção
+            ✓ Ver Coleção
           </button>
         </div>
       </div>

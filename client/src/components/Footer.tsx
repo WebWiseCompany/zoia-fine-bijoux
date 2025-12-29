@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-background/70 font-light mb-6">
-              Bijuterias finas e delicadas para celebrar sua beleza única.
+              Bijutarias finas e delicadas para celebrar a sua beleza única.
             </p>
             {/* Social Links */}
             <div className="flex gap-4">
@@ -167,7 +167,7 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <span className="text-xs text-background/60 font-light">Métodos de Pagamento:</span>
             <div className="flex gap-3">
-              {['Visa', 'Mastercard', 'PayPal'].map((method) => (
+              {['Visa', 'Mastercard', 'Multibanco'].map((method) => (
                 <span
                   key={method}
                   className="text-xs text-background/60 font-light px-3 py-1 border border-background/20 rounded"

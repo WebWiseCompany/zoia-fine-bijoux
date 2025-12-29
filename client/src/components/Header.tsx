@@ -21,10 +21,10 @@ export default function Header() {
   ];
 
   const promos = [
-    { icon: '🚚', text: 'FRETE GRÁTIS em todos os pedidos acima de R$169' },
-    { icon: '💰', text: '20% de desconto no boleto ou Pix' },
-    { icon: '💳', text: 'Em até 6x no cartão de crédito sem juros' },
-    { icon: '💬', text: 'Atendimento Via Whatsapp' },
+    { icon: '🚚', text: 'ENVIO GRÁTIS em todos os pedidos acima de €50' },
+    { icon: '💰', text: '20% de desconto no Multibanco ou Transferência' },
+    { icon: '💳', text: 'Até 12 meses sem juros no cartão de crédito' },
+    { icon: '💬', text: 'Atendimento Via WhatsApp' },
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function Header() {
               <div className="relative w-full">
                 <input
                   type="text"
-                  placeholder="Pesquisar por bijuteria, colar..."
+                  placeholder="Pesquisar por bijutaria, colar..."
                   className="w-full px-4 py-2.5 bg-secondary text-foreground placeholder-muted-foreground rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                 />
                 <button className="absolute right-3 top-1/2 transform -translate-y-1/2">
@@ -85,7 +85,7 @@ export default function Header() {
               {/* Account */}
               <button className="hidden sm:flex items-center gap-2 px-4 py-2 hover:bg-secondary rounded-lg transition-colors">
                 <User size={18} className="text-foreground" />
-                <span className="text-sm font-medium text-foreground">MINHA CONTA</span>
+                <span className="text-sm font-medium text-foreground">A MINHA CONTA</span>
               </button>
 
               {/* Cart */}

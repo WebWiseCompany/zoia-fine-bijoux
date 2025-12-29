@@ -22,8 +22,8 @@ const products: Product[] = [
     id: 1,
     name: 'Colar Delicado',
     category: 'Colares',
-    price: 89,
-    originalPrice: 110,
+    price: 49.99,
+    originalPrice: 65.00,
     image: '/images/product-showcase.jpg',
     reviews: 45,
   },
@@ -31,8 +31,8 @@ const products: Product[] = [
     id: 2,
     name: 'Anel Minimalista',
     category: 'Anéis',
-    price: 65,
-    originalPrice: 85,
+    price: 39.99,
+    originalPrice: 52.00,
     image: '/images/jewelry-collection.jpg',
     reviews: 32,
   },
@@ -40,8 +40,8 @@ const products: Product[] = [
     id: 3,
     name: 'Brincos Elegantes',
     category: 'Brincos',
-    price: 75,
-    originalPrice: 95,
+    price: 44.99,
+    originalPrice: 59.00,
     image: '/images/product-showcase.jpg',
     reviews: 28,
   },
@@ -49,8 +49,8 @@ const products: Product[] = [
     id: 4,
     name: 'Pulseira Ouro',
     category: 'Pulseiras',
-    price: 95,
-    originalPrice: 125,
+    price: 59.99,
+    originalPrice: 79.00,
     image: '/images/jewelry-collection.jpg',
     reviews: 52,
   },
@@ -58,8 +58,8 @@ const products: Product[] = [
     id: 5,
     name: 'Conjunto Sofisticado',
     category: 'Conjuntos',
-    price: 180,
-    originalPrice: 240,
+    price: 119.99,
+    originalPrice: 159.00,
     image: '/images/hero-banner.jpg',
     reviews: 67,
   },
@@ -67,8 +67,8 @@ const products: Product[] = [
     id: 6,
     name: 'Colar Ouro Rosado',
     category: 'Colares',
-    price: 110,
-    originalPrice: 145,
+    price: 69.99,
+    originalPrice: 89.00,
     image: '/images/product-showcase.jpg',
     reviews: 41,
   },
@@ -142,7 +142,7 @@ export default function Collection() {
                   {/* Add to Cart Button */}
                   <button className="absolute bottom-4 left-4 right-4 bg-primary hover:shadow-lg text-primary-foreground py-2.5 px-4 rounded font-bold text-sm flex items-center justify-center gap-2 transition-all duration-300 opacity-0 group-hover:opacity-100">
                     <ShoppingBag size={16} />
-                    Adicionar
+                    Adicionar ao Carrinho
                   </button>
                 </div>
 
@@ -159,16 +159,16 @@ export default function Collection() {
                   <div className="space-y-1">
                     <div className="flex items-baseline gap-2">
                       <span className="text-xs line-through text-muted-foreground">
-                        R${product.originalPrice.toFixed(2)}
+                        €{product.originalPrice.toFixed(2)}
                       </span>
                       <span className="text-xl font-bold text-primary">
-                        R${product.price.toFixed(2)}
+                        €{product.price.toFixed(2)}
                       </span>
                     </div>
 
                     {/* Installment Info */}
                     <p className="text-xs text-muted-foreground font-medium">
-                      💳 6X DE R${(product.price / 6).toFixed(2)}
+                      💳 12X DE €{(product.price / 12).toFixed(2)}
                     </p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export default function Collection() {
         {/* View More Button */}
         <div className="text-center mt-12">
           <button className="bg-primary hover:shadow-lg text-primary-foreground px-8 py-3 rounded-lg font-bold uppercase tracking-wide transition-all duration-300">
-            Ver Mais
+            Ver Mais Produtos
           </button>
         </div>
       </div>

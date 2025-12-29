@@ -55,11 +55,11 @@ export default function About() {
 
             {/* Description */}
             <p className="text-lg text-muted-foreground font-light leading-relaxed">
-              A Zoia Fine Bijoux é mais do que uma loja de bijuterias. Somos uma celebração da elegância, sofisticação e da beleza que reside nos pequenos detalhes.
+              A Zoia Fine Bijoux é mais do que uma loja de bijutarias. Somos uma celebração da elegância, sofisticação e da beleza que reside nos pequenos detalhes.
             </p>
 
             <p className="text-lg text-muted-foreground font-light leading-relaxed">
-              Cada peça da nossa coleção é selecionada com cuidado meticuloso, refletindo nossa paixão por qualidade, autenticidade e design minimalista. Acreditamos que a verdadeira beleza reside na simplicidade e na sofisticação.
+              Cada peça da nossa coleção é selecionada com cuidado meticuloso, refletindo a nossa paixão por qualidade, autenticidade e design minimalista. Acreditamos que a verdadeira beleza reside na simplicidade e na sofisticação.
             </p>
 
             {/* Values Grid */}
@@ -85,7 +85,7 @@ export default function About() {
             {/* CTA */}
             <div className="pt-4">
               <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg">
-                Conhecer Nossa História
+                Conhecer a Nossa História
               </button>
             </div>
           </div>
